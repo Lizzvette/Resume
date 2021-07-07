@@ -1,0 +1,187 @@
+*{ /* "*" in place of body to apply to whole page - interrupts inheritance so may need to change*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+.print-area{
+    width: 80%;
+    margin: 20px auto;
+}
+.print-area .header{
+    width: 100%;
+    height: 150px;
+    /*margin: 150px auto;*/
+    background-color:rgb(213, 208, 224);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header img {
+    
+    width: 200px;
+    height: 275px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    border: 5px solid rgb(73, 73, 75);
+    box-shadow: 3px, 3px, 10px rgb(118, 119, 209);
+    cursor: pointer;
+    transition: .5s;
+    user-select: none;
+}
+.header-text{
+    color:rgb(73, 73, 75);
+    width: 30%;
+    margin-left: auto;
+    
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-area{
+    width: 30%;
+    background-color:rgb(168, 169, 209);
+    text-align: center;
+    padding-bottom: 20px; /*Play with this more*/
+}
+.left-area .follow{
+    margin-top: 225px;   
+    padding: 0 30px;
+} 
+.follow h4{ 
+    font-size: 30px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+.follow h5{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.follow p{
+    font-size: 17px;
+}
+.skills{
+    margin-top: 30px;
+}
+.skills h1{
+    font-size: 30px;
+    font-weight: normal;
+}
+.bars{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 10px;
+    padding: 0 20px;
+}
+.bars .bar p{
+    font-size: 15px;
+    font-weight: bold;
+}
+.bar span{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(118, 119, 209);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.bar span::before{
+    position: absolute;
+    content: ""; /* look at other project scroll/toggle skills*/
+    width: 80%;
+    height: 80%;
+    background-color: rgb(131, 131, 182);
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.right-area{
+    width: 70%;
+    height: 70% /*This solved About location* notice no ;*/
+    /*padding: 50%;*/
+    
+}
+.right-area h1{
+    font-size: 35px;
+    font-weight: normal;
+}
+.right-area h1 span{
+    margin-right: 30px;
+    font-size: 50px;
+    color: rgb(73, 73, 75);
+}
+.right-area p{
+    padding-left: 70px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 17px;
+    color: rgb(73, 73, 75);
+    margin-top: 10px; /*Play with this..*/
+    
+}
+.experience span{ /* This may redundant - remove? and not changing*/
+    position:relative; /*Play with this*/
+    text-align:center;
+    font-size: 30px;
+    font-weight: normal;
+    padding-left: 30px;
+    color: rgb(73, 73, 75);
+}
+/*.experience .work-group{
+    position: 
+}*/
+.work-group{
+    margin: 20px 0;
+}
+.work-group h3{
+    font-size: 22px;
+    font-weight: normal;
+    padding-left: 70px;
+}
+.work-group h4{
+    font-size: 18px;
+    padding-left:70px;
+    font-weight:normal;
+    color: rgb(73, 73, 75);
+}
+.work-group span{
+    position:absolute;
+    top: 10px;
+    right: 0;
+    color: rgb(73, 73, 75);
+    font-weight: bold;
+    font-size: 15px;
+}
+.education h1 span{ 
+    position:relative; 
+    text-align:center;
+    font-size: 35px;
+    font-weight: normal;
+    padding-left: 30px;
+} 
+.school h3, h4 {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 20px;
+    margin-bottom: 2px
+}
+.school p{
+    position: relative;
+    text-align: center;
+    font-weight:normal;
+    padding-left: 70px;
+    margin-top:0px;
+}
+button{
+    font-size:large;
+    padding: 10px 20px;
+}
